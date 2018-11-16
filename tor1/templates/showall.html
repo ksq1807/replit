@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>用户名</td>
+        <td>密码</td>
+        <td>注册时间</td>
+    </tr>
+    {% for item in rs%}
+    <tr>
+        <td><a href="/showone/{{item.id}}">{{item.username}}</a></td>
+        <td>{{item.password}}</td>
+        <td>{{item.insertTime}}</td>
+    </tr>
+    {%end%}
+</table>
+</body>
+</html>
